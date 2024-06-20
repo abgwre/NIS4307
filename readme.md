@@ -36,7 +36,7 @@
 
 运行test.py结果如下图所示
 
-![alt text](./13-other_files_directory/1-1.png)![alt text](./13-other_files_directory/2-1.png)
+![alt text](./_13_other_files_directory/1-1.png)![alt text](./_13_other_files_directory/2-1.png)
 
 
 load_images_from_folder定义如下：
@@ -55,4 +55,9 @@ def load_images_from_folder(folder_path):
             img = transform(img)  # 应用定义的转换器
             img_list.append(img)
     return img_list
+ ```
+
+ 如在git clone时遇到问题，可尝试以下命令后重新clone
+ ```
+ git config --global http.postBuffer 524288000
  ```
